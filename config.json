@@ -77,6 +77,30 @@
           "type": "default"
         }
       ]
+    },
+    {
+      "id": "interactive-frontend-dashboard",
+      "title": "Interactive Frontend Dashboard",
+      "description": "Build a small assignment tracker with HTML, CSS, and JavaScript using DOM events and dynamic UI updates.",
+      "path": "assignments/interactive-frontend-dashboard",
+      "dueDate": "2026-06-19",
+      "attachments": [
+        {
+          "name": "Starter HTML",
+          "file": "starter-index.html",
+          "type": "html"
+        },
+        {
+          "name": "Starter CSS",
+          "file": "starter-style.css",
+          "type": "txt"
+        },
+        {
+          "name": "Starter JavaScript",
+          "file": "starter-script.js",
+          "type": "txt"
+        }
+      ]
     }
   ]
 }

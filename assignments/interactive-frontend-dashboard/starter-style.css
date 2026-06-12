@@ -1,0 +1,99 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #213547;
+  --muted: #5a6b7a;
+  --primary: #0f766e;
+  --primary-soft: #d9f3f0;
+  --done: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #edf3ff 0%, #f8fbff 100%);
+  color: var(--text);
+}
+
+.dashboard {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.assignment-form {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.filter-btn {
+  background: var(--primary-soft);
+  color: #0f4c46;
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.assignment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.assignment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem;
+  border: 1px solid #dbe3ee;
+  border-radius: 12px;
+  background: #fafcff;
+}
+
+.assignment-card.done .title {
+  text-decoration: line-through;
+  color: var(--done);
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

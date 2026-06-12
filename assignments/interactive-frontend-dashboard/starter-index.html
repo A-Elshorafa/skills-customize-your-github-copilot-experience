@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Frontend Dashboard</title>
+    <link rel="stylesheet" href="starter-style.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <h1>Student Assignment Dashboard</h1>
+
+      <form id="assignment-form" class="assignment-form">
+        <label for="assignment-title">Assignment Title</label>
+        <input id="assignment-title" type="text" placeholder="e.g. JavaScript Quiz" required />
+
+        <label for="assignment-course">Course</label>
+        <input id="assignment-course" type="text" placeholder="e.g. Computer Science" required />
+
+        <button type="submit">Add Assignment</button>
+      </form>
+
+      <section class="filters">
+        <button type="button" data-filter="all" class="filter-btn active">All</button>
+        <button type="button" data-filter="active" class="filter-btn">Active</button>
+        <button type="button" data-filter="completed" class="filter-btn">Completed</button>
+      </section>
+
+      <section>
+        <h2>Assignments</h2>
+        <ul id="assignment-list" class="assignment-list"></ul>
+      </section>
+    </main>
+
+    <script src="starter-script.js"></script>
+  </body>
+</html>
